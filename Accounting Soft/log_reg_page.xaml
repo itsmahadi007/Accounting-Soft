@@ -81,7 +81,7 @@
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
-        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="signup">
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="signup_button">
             <BeginStoryboard x:Name="Storyboard_signup_BeginStoryboard" Storyboard="{StaticResource Storyboard_signup}"/>
         </EventTrigger>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="login">
@@ -136,25 +136,26 @@
             <TextBlock HorizontalAlignment="Left" Height="116" TextWrapping="Wrap" Text="Already have a Account?" VerticalAlignment="Top" Width="228" FontSize="36" Foreground="White" Margin="70,0,0,0"/>
             <Button x:Name="login" Content="Sign in" HorizontalAlignment="Left" Height="61" VerticalAlignment="Center" Width="228" Background="#FF1B1B1B" Foreground="White" BorderBrush="White" FontSize="20" Margin="70,121,0,100"/>
             <TextBlock HorizontalAlignment="Center" Height="116" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="36" Foreground="White" Margin="560,0,0,0"><Run Text="Don't have a"/><LineBreak/><Run Text="Account?"/></TextBlock>
-            <Button x:Name="signup" Content="Sign up" HorizontalAlignment="Center" Height="61" VerticalAlignment="Top" Width="200" Background="#FF1B1B1B" Foreground="White" BorderBrush="#FFFDFDFD" FontSize="20" Margin="560,121,0,0"/>
+            <Button x:Name="signup_button" Content="Sign up" HorizontalAlignment="Center" Height="61" VerticalAlignment="Top" Width="200" Background="#FF1B1B1B" Foreground="White" BorderBrush="#FFFDFDFD" FontSize="20" Margin="560,121,0,0"/>
 
         </Grid>
         <Grid x:Name="grid" HorizontalAlignment="Left" Height="601" VerticalAlignment="Center" Width="500" Margin="107,10,0,0">
             <Rectangle HorizontalAlignment="Center" Stroke="Black" Width="490" StrokeThickness="0" RadiusY="10" RadiusX="10" Margin="5,10,5,50" Fill="#FFECF1F3"/>
             <StackPanel x:Name="stackPanel_sign" HorizontalAlignment="Center" Height="327" Margin="10,129,10,145" VerticalAlignment="Center" Width="480">
                 <TextBlock HorizontalAlignment="Center" Height="48" Margin="0,20,0,0" TextWrapping="Wrap" Width="400" Foreground="Black" FontSize="36" VerticalAlignment="Center"><Run FontWeight="Bold" Text="Login "/></TextBlock>
-                <TextBox HorizontalAlignment="Center" Height="54" Margin="0,20,50,0" TextWrapping="Wrap" Text="User Name " Width="350" FontSize="22" VerticalContentAlignment="Center" Background="{x:Null}" SelectionBrush="#FF0A7C7C" BorderBrush="#FF0E0D0D" BorderThickness="0,0,0,1" Foreground="#FF767676" VerticalAlignment="Center"/>
-                <PasswordBox HorizontalAlignment="Center" Height="54" Width="350" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0,1" Password="Password " Foreground="#FF767676" VerticalContentAlignment="Center" FontSize="22" Margin="0,0,50,0" VerticalAlignment="Center"/>
+                <TextBox x:Name="username_textbox" HorizontalAlignment="Center" Height="54" Margin="0,20,50,0" TextWrapping="Wrap" Text="User Name " Width="350" FontSize="22" VerticalContentAlignment="Center" Background="{x:Null}" SelectionBrush="#FF0A7C7C" BorderBrush="#FF0E0D0D" BorderThickness="0,0,0,1" Foreground="#FF767676" VerticalAlignment="Center" GotFocus="username_textbox_Gotfocus"/>
+                <PasswordBox x:Name="password_passbox" HorizontalAlignment="Center" Height="54" Width="350" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0,1" Password="Password " Foreground="#FF767676" VerticalContentAlignment="Center" FontSize="22" Margin="0,0,50,0" VerticalAlignment="Center" GotKeyboardFocus="password_passbox_Gotfocus"/>
                 <Button Content="Forget Password ?" HorizontalAlignment="Left" Height="23.5" Width="99.5" VerticalAlignment="Center" Margin="40,4,0,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
-                <Button Content="Login" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="168" FontSize="24" Background="{x:Null}" BorderBrush="Black" Margin="156,0,22,0"/>
+                <Button x:Name="login_button" Content="Login" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="168" FontSize="24" Background="{x:Null}" BorderBrush="Black" Margin="156,0,22,0"/>
             </StackPanel>
-            <StackPanel x:Name="stackPanel_reg" HorizontalAlignment="Left" Height="349.5" Margin="70,129,0,0" VerticalAlignment="Top" Width="420" Visibility="Hidden">
+            <StackPanel x:Name="stackPanel_reg" HorizontalAlignment="Left" Height="424.5" Margin="70,79.153,0,0" VerticalAlignment="Top" Width="420" Visibility="Hidden">
                 <TextBlock HorizontalAlignment="Left" Height="55.333" Margin="24,11,0,0" TextWrapping="Wrap" Text="Sign up " Width="247.5" Foreground="#FF080808" FontSize="36" FontWeight="Bold" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0"/>
-                <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0"/>
-                <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="338.667" FontSize="22" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" Margin="24,10,0,0"/>
-                <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Company Name" VerticalAlignment="Top" Width="338.667" FontSize="22" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" Margin="24,10,0,0"/>
-                <Button Content="Sign Up" Height="54" VerticalAlignment="Center" Width="168" FontSize="24" Background="{x:Null}" BorderBrush="Black" Margin="24,16,31,0" HorizontalAlignment="Left"/>
+                <TextBox x:Name="new_username_textbox" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0" GotKeyboardFocus="new_username_textbox_Getfocus"/>
+                <TextBox x:Name="new_email_textbox" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0" GotKeyboardFocus="new_email_textbox_Getfocus"/>
+                <TextBox x:Name="new_number_textbox" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="338.667" FontSize="22" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" Margin="24,10,0,0" GotKeyboardFocus="new_number_textbox_Getfocus"/>
+                <TextBox x:Name="new_password_textbox" HorizontalAlignment="Left" Height="32" Margin="24,10,0,0" TextWrapping="Wrap" Text="Enter Password " Width="338.667" Background="{x:Null}" BorderBrush="Black" FontSize="22" VerticalAlignment="Top" BorderThickness="0,0,0,1" Foreground="#FFA4A4A4" GotKeyboardFocus="new_password_textbox_Getfocus"/>
+                <TextBox x:Name="new_re_password_textbox" HorizontalAlignment="Left" Height="32" Margin="24,10,0,0" TextWrapping="Wrap" Text="Again Enter Password " Width="338.667" Background="{x:Null}" BorderBrush="Black" FontSize="22" VerticalAlignment="Top" BorderThickness="0,0,0,1" Foreground="#FFA4A4A4" GotKeyboardFocus="new_re_password_textbox_Getfocus"/>
+                <Button Content="Sign Up" Height="54" VerticalAlignment="Center" Width="168" FontSize="24" Background="{x:Null}" BorderBrush="Black" Margin="24,23,0,0" HorizontalAlignment="Left"/>
             </StackPanel>
         </Grid>
         <Image x:Name="image" HorizontalAlignment="Left" Height="162.051" Margin="523,221,0,0" VerticalAlignment="Top" Width="158" Source="ghorami_logo.png" StretchDirection="DownOnly"/>
