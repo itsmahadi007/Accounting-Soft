@@ -23,9 +23,29 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel_sign">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel_reg">
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-77.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-211.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-691.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-788.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-951.702"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-77.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-211.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-691.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-788.333"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-885.658"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-0.667"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Storyboard_Signin">
             <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grid">
@@ -42,10 +62,38 @@
                 <EasingThicknessKeyFrame KeyTime="0" Value="472,221,0,0"/>
                 <EasingThicknessKeyFrame KeyTime="0:0:0.3" Value="523,221,0,0"/>
             </ThicknessAnimationUsingKeyFrames>
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel_reg">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-952.057"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-758.387"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-269.054"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-142.054"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-0.055"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-894.057"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-758.387"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-269.054"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-142.054"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-0.055"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-0.667"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="image2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-0.667"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-0.667"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
@@ -62,6 +110,33 @@
 
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FF252525" HorizontalAlignment="Center" Height="474.5" Margin="100,50,100,75.5" VerticalAlignment="Center" Width="1000" RadiusY="17.667" RadiusX="17.667"/>
+        <Grid HorizontalAlignment="Left" Height="35.5" Margin="100,50,0,0" VerticalAlignment="Top" Width="1000">
+            <Grid>
+                <Rectangle Fill="#FF3A3A3A" HorizontalAlignment="Left" Height="35.5" RadiusY="17.667" RadiusX="17.667" VerticalAlignment="Top" Width="1000"/>
+                <Rectangle Fill="#FF3A3A3A" HorizontalAlignment="Left" Height="17.334" Margin="983.5,18.166,0,0" VerticalAlignment="Top" Width="16.5"/>
+                <Rectangle Fill="#FF3A3A3A" HorizontalAlignment="Left" Height="17.334" Margin="0,18.166,0,0" VerticalAlignment="Top" Width="15.775"/>
+            </Grid>
+            <Image x:Name="image1" HorizontalAlignment="Right" Height="21" Margin="0,7.25,11.669,7.25" Width="23" Source="cross.png" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="image2" HorizontalAlignment="Right" Height="21" Margin="0,7.25,44.669,7.25" VerticalAlignment="Center" Width="23" Source="minimize_icon.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
         <Grid Margin="122,170.5,100,147.5">
             <TextBlock HorizontalAlignment="Left" Height="116" TextWrapping="Wrap" Text="Already have a Account?" VerticalAlignment="Top" Width="228" FontSize="36" Foreground="White" Margin="70,0,0,0"/>
             <Button x:Name="login" Content="Sign in" HorizontalAlignment="Left" Height="61" VerticalAlignment="Center" Width="228" Background="#FF1B1B1B" Foreground="White" BorderBrush="White" FontSize="20" Margin="70,121,0,100"/>
@@ -70,7 +145,7 @@
 
         </Grid>
         <Grid x:Name="grid" HorizontalAlignment="Left" Height="601" VerticalAlignment="Center" Width="500" Margin="107,10,0,0">
-            <Rectangle HorizontalAlignment="Center" Stroke="Black" Width="490" StrokeThickness="0" RadiusY="10" RadiusX="10" Margin="5,10,5,38" Fill="#FFE6FFFE"/>
+            <Rectangle HorizontalAlignment="Center" Stroke="Black" Width="490" StrokeThickness="0" RadiusY="10" RadiusX="10" Margin="5,10,5,50" Fill="#FFECF1F3"/>
             <StackPanel x:Name="stackPanel_sign" HorizontalAlignment="Center" Height="327" Margin="10,129,10,145" VerticalAlignment="Center" Width="480">
                 <TextBlock HorizontalAlignment="Center" Height="48" Margin="0,20,0,0" TextWrapping="Wrap" Width="400" Foreground="Black" FontSize="36" VerticalAlignment="Center"><Run FontWeight="Bold" Text="Login "/></TextBlock>
                 <TextBox HorizontalAlignment="Center" Height="54" Margin="0,20,50,0" TextWrapping="Wrap" Text="User Name " Width="350" FontSize="22" VerticalContentAlignment="Center" Background="{x:Null}" SelectionBrush="#FF0A7C7C" BorderBrush="#FF0E0D0D" BorderThickness="0,0,0,1" Foreground="#FF767676" VerticalAlignment="Center"/>
@@ -78,7 +153,7 @@
                 <Button Content="Forget Password ?" HorizontalAlignment="Left" Height="23.5" Width="99.5" VerticalAlignment="Center" Margin="40,4,0,0" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 <Button Content="Login" HorizontalAlignment="Center" Height="54" VerticalAlignment="Center" Width="168" FontSize="24" Background="{x:Null}" BorderBrush="Black" Margin="156,0,22,0"/>
             </StackPanel>
-            <StackPanel x:Name="stackPanel" HorizontalAlignment="Left" Height="349.5" Margin="70,129,0,0" VerticalAlignment="Top" Width="420" Visibility="Hidden">
+            <StackPanel x:Name="stackPanel_reg" HorizontalAlignment="Left" Height="349.5" Margin="70,129,0,0" VerticalAlignment="Top" Width="420" Visibility="Hidden">
                 <TextBlock HorizontalAlignment="Left" Height="55.333" Margin="24,11,0,0" TextWrapping="Wrap" Text="Sign up " Width="247.5" Foreground="#FF080808" FontSize="36" FontWeight="Bold" VerticalAlignment="Top"/>
                 <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0"/>
                 <TextBox HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="338.667" Background="{x:Null}" BorderBrush="Black" Foreground="#FFA4A4A4" VerticalContentAlignment="Center" BorderThickness="0,0,0,1" FontSize="22" Margin="24,10,0,0"/>
