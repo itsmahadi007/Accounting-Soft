@@ -1,25 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-
-
-namespace Accounting_Soft
+﻿namespace Accounting_Soft
 {
-    /// <summary>
-    /// Interaction logic for log_reg_page.xaml
-    /// </summary>
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Windows;
+    using System.Windows.Input;
+
     public partial class log_reg_page : Window
     {
+        internal SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Accounting_DB.mdf;Integrated Security=True;Connect Timeout=30");
+
         public log_reg_page()
         {
             InitializeComponent();
@@ -59,7 +48,7 @@ namespace Accounting_Soft
 
         private void new_username_textbox_Getfocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            if(new_username_textbox.Text == "Name")
+            if (new_username_textbox.Text == "Name")
             {
                 new_username_textbox.Text = "";
             }
@@ -83,7 +72,7 @@ namespace Accounting_Soft
 
         private void new_password_textbox_Getfocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            if(new_password_textbox.Text == "Enter Password ")
+            if (new_password_textbox.Text == "Enter Password ")
             {
                 new_password_textbox.Text = "";
             }
@@ -91,13 +80,27 @@ namespace Accounting_Soft
 
         private void new_re_password_textbox_Getfocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            if(new_re_password_textbox.Text == "Again Enter Password ")
+            if (new_re_password_textbox.Text == "Again Enter Password ")
             {
                 new_re_password_textbox.Text = "";
             }
         }
 
-
-
+        private void btn_login(object sender, RoutedEventArgs e)
+        {
+            SqlDataAdapter sda = new SqlDataAdapter(@"select * from userac where Name='" + username_textbox.Text + "' and Password ='" + password_passbox.Password + "'", sqlcon);
+            DataTable dtbl = new DataTable();
+            sda.Fill(dtbl);
+            if (dtbl.Rows.Count == 1)
+            {
+                MainWindow objMain = new MainWindow();
+                this.Hide();
+                objMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect User Name Passward");
+            }
+        }
     }
 }

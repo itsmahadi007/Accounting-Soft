@@ -1,0 +1,20 @@
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.exe.config
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.exe
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.pdb
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csprojAssemblyReference.cache
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\log_reg_page.g.cs
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\MainWindow.g.cs
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\App.g.cs
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft_MarkupCompile.cache
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft_MarkupCompile.lref
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\log_reg_page.baml
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\MainWindow.baml
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.g.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.Properties.Resources.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csproj.GenerateResource.cache
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csproj.CoreCompileInputs.cache
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.exe
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.pdb
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft_Content.g.cs
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB.mdf
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB_log.ldf
