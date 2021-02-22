@@ -4,9 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Accounting_Soft"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" 
+        Title="MainWindow" Height="600" Width="1200" WindowStyle="None" Topmost="True" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
     <Grid>
+        <Grid Margin="1,0,0,0" VerticalAlignment="Top">
+            <Rectangle Height="32" VerticalAlignment="Top" Margin="0,0,-1,0" MouseDown="drag_window" Fill="#FFECF1F3"/>
+
+            <Button x:Name="btn_exit" HorizontalAlignment="Right" Height="23" Margin="0,5,5,0" VerticalAlignment="Top" Width="31" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btn_exit_click">
+                <Image Source="cross.png"/>
+            </Button>
+            <Button x:Name="btn_max"  HorizontalAlignment="Right" Height="23" Margin="0,5,33,0" VerticalAlignment="Top" Width="31" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btn_max_click">
+                <Image Source="max.png" Height="19" Width="19"/>
+            </Button>
+            <Button x:Name="btn_mini"  HorizontalAlignment="Right" Height="23" Margin="0,5,61,0" VerticalAlignment="Top" Width="31" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btn_mini_click">
+                <Image Source="minimize_black.png" Height="19" Width="19"/>
+            </Button>
+            <Button Content="Home" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="50" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+            <Button Content="POS" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="50" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Margin="50,0,0,0" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+            <Button Content="Inventory " HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="68" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Margin="100,0,0,0" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+            <Button Content="Payments" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="64" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Margin="168.009,0,0,0" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+            <Button Content="Accounts" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="64" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Margin="232.342,0,0,0" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+            <Button Content="Miscellaneous" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="86" Background="{x:Null}" BorderBrush="Black" BorderThickness="0,0,0.2,0.2" Margin="296.342,0,0,0" Padding="1,-1,1,1" UseLayoutRounding="False"/>
+      
         
+        </Grid>
     </Grid>
 </Window>

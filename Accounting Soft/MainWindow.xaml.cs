@@ -24,5 +24,38 @@ namespace Accounting_Soft
         {
             InitializeComponent();
         }
+
+        //Windows basic custom functions
+        private void btn_exit_click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void drag_window(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+        private void btn_mini_click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void btn_max_click(object sender, RoutedEventArgs e)
+        {
+            if (WindowState == WindowState.Normal)
+            {
+                WindowState = WindowState.Maximized;
+            }
+            else
+                WindowState = WindowState.Normal;
+        }
+    
+    
+    
+    
+    
+    
     }
 }
