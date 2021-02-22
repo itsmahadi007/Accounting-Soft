@@ -102,5 +102,29 @@
                 MessageBox.Show("Incorrect User Name Passward");
             }
         }
+
+        private void btn_signup_Click(object sender, RoutedEventArgs e)
+        {
+           /* int a = 0;
+            a = new_username_textbox.SelectionLength;
+            int b = 0;
+            b = new_password_textbox.SelectionLength;
+            if (a > 0 && b > 0)
+            {
+                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Login.mdf;Integrated Security=True;Connect Timeout=30");
+                sqlcon.Open();
+                SqlDataAdapter data = new SqlDataAdapter("INSERT INTO login (Name,Password) VALUES('" + Names.Text + "','" + Passwords.Text + "');", sqlcon);
+                data.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("Successfully Created");
+                sqlcon.Close();
+                Login objlo = new Login();
+                this.Hide();
+                objlo.Show();
+            }
+            else
+            {
+                MessageBox.Show("Insert Value First");
+            }*/
+        }
     }
 }
