@@ -1,5 +1,6 @@
 ﻿namespace Accounting_Soft
 {
+    using System;
     using System.Data;
     using System.Data.SqlClient;
     using System.Windows;
@@ -14,6 +15,7 @@
             InitializeComponent();
         }
 
+        //Windows basic custom functions
         private void btn_exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
@@ -30,17 +32,20 @@
                 this.DragMove();
         }
 
-        private void username_textbox_Gotfocus(object sender, RoutedEventArgs e)
+
+        //Adjasting textbox behaviur  code starts here
+        private void number_textbox_Gotfocus(object sender, RoutedEventArgs e)
         {
-            if (username_textbox.Text == "User Name ")
+            
+            if (number_textbox.Text == "Number")
             {
-                username_textbox.Text = "";
+                number_textbox.Text = "";
             }
         }
 
         private void password_passbox_Gotfocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            if (password_passbox.Password == "Password ")
+            if (password_passbox.Password == "Password")
             {
                 password_passbox.Password = "";
             }
@@ -72,7 +77,7 @@
 
         private void new_password_textbox_Getfocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            if (new_password_textbox.Text == "Enter Password ")
+            if (new_password_textbox.Text == "Enter Password")
             {
                 new_password_textbox.Text = "";
             }
@@ -85,10 +90,69 @@
                 new_re_password_textbox.Text = "";
             }
         }
+        private void number_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (number_textbox.Text == "")
+            {
+                number_textbox.Text = "Number";
+            }
+        }
+
+        private void password_passbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (password_passbox.Password == "")
+            {
+                password_passbox.Password = "Password";
+            }
+        }
+
+        private void new_username_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (new_username_textbox.Text == "")
+            {
+                new_username_textbox.Text = "Name";
+            }
+        }
+
+        private void new_email_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (new_email_textbox.Text == "")
+            {
+                new_email_textbox.Text = "Email";
+            }
+        }
+
+        private void new_number_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (new_number_textbox.Text == "")
+            {
+                new_number_textbox.Text = "Number";
+            }
+        }
+
+        private void new_password_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (new_password_textbox.Text == "")
+            {
+                new_password_textbox.Text = "Enter Password";
+            }
+        }
+
+        private void new_re_password_textboxnew_re_password_textbox_lostfocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            if (new_re_password_textbox.Text == "")
+            {
+                new_re_password_textbox.Text = "Again Enter Password ";
+            }
+        }
+        //Adjasting textbox behaviur  code ends here
+
+
+
 
         private void btn_login(object sender, RoutedEventArgs e)
         {
-            SqlDataAdapter sda = new SqlDataAdapter(@"select * from userac where Name='" + username_textbox.Text + "' and Password ='" + password_passbox.Password + "'", sqlcon);
+            SqlDataAdapter sda = new SqlDataAdapter(@"select * from userac where Number='" + number_textbox.Text + "' and Password ='" + password_passbox.Password + "'", sqlcon);
             DataTable dtbl = new DataTable();
             sda.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
@@ -105,26 +169,91 @@
 
         private void btn_signup_Click(object sender, RoutedEventArgs e)
         {
-           /* int a = 0;
-            a = new_username_textbox.SelectionLength;
-            int b = 0;
-            b = new_password_textbox.SelectionLength;
-            if (a > 0 && b > 0)
+            string time;
+
+            DateTime currentDateTime = DateTime.Now;
+            time = currentDateTime.ToString();
+
+            int n = new_username_textbox.Text.Length;
+            int em = new_email_textbox.Text.Length;
+            int num = new_number_textbox.Text.Length;
+            int pa = new_password_textbox.Text.Length;
+            int rpa = new_re_password_textbox.Text.Length;
+
+            //SqlDataAdapter sda = new SqlDataAdapter(@"select Id from userac where Id = (SELECT max(Id) FROM userac)", sqlcon);
+            //sda.Fill(id);
+
+
+            if (n == 0)
             {
-                SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Login.mdf;Integrated Security=True;Connect Timeout=30");
-                sqlcon.Open();
-                SqlDataAdapter data = new SqlDataAdapter("INSERT INTO login (Name,Password) VALUES('" + Names.Text + "','" + Passwords.Text + "');", sqlcon);
-                data.SelectCommand.ExecuteNonQuery();
-                MessageBox.Show("Successfully Created");
-                sqlcon.Close();
-                Login objlo = new Login();
-                this.Hide();
-                objlo.Show();
+                MessageBox.Show("Name field is empty");
+            }
+            else if (em == 0)
+            {
+                MessageBox.Show("Email filed is empty");
+            }
+            else if (num == 0)
+            {
+                MessageBox.Show("Number filed is empty");
+            }
+            else if (pa == 0)
+            {
+                MessageBox.Show("Password filed is empty");
+
+            }
+            else if (rpa == 0)
+            {
+                MessageBox.Show("Re-Enter the password");
+            }
+            else if (pa != rpa)
+            {
+                MessageBox.Show("Password doesn't match");
             }
             else
             {
-                MessageBox.Show("Insert Value First");
-            }*/
+                //Checking phone number wheather it's existing or not
+                SqlCommand cmd_num = new SqlCommand();
+                cmd_num.CommandType = CommandType.Text;
+                cmd_num.CommandText = "select Number from userac where Number ='" + new_number_textbox.Text + "'";
+                cmd_num.Connection = sqlcon;
+
+                sqlcon.Open();
+                SqlDataReader num_db = cmd_num.ExecuteReader();
+                
+
+                if (num_db.HasRows)
+                {
+                    sqlcon.Close();
+                    MessageBox.Show("This number is already used");
+                }
+                else
+                {
+                    sqlcon.Close();
+                    //Taking ID  here
+                    SqlCommand cmd_id = new SqlCommand();
+                    cmd_id.CommandType = CommandType.Text;
+                    cmd_id.CommandText = "select Id from userac where Id = (SELECT max(Id) FROM userac)";
+                    cmd_id.Connection = sqlcon;
+                    sqlcon.Open();
+                    SqlDataReader dr = cmd_id.ExecuteReader();
+                    dr.Read();
+                    int id = dr.GetInt32(0) + 1;
+                    sqlcon.Close();
+
+                    //pushing data to the database
+                    SqlCommand cmd_signup = new SqlCommand();
+                    cmd_signup.CommandType = CommandType.Text;
+                    cmd_signup.CommandText = "INSERT INTO userac (Id,Name,Email,Number,Password,time) VALUES('" + id + "','" + new_username_textbox.Text + "','" + new_email_textbox.Text + "','" + new_number_textbox.Text + "','" + new_password_textbox.Text + "','" + time + "');";
+                    cmd_signup.Connection = sqlcon;
+                    sqlcon.Open();
+                    cmd_signup.ExecuteNonQuery();
+                    sqlcon.Close();
+                    MessageBox.Show("Successfully Created");
+                }
+
+            }
         }
+
+        
     }
 }
