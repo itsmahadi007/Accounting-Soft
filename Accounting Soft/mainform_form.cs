@@ -11,6 +11,7 @@
         public mainform_form()
         {
             InitializeComponent();
+            OpenChildForm(new home_form());
         }
 
         private void OpenChildForm(Form childForm)
@@ -93,7 +94,9 @@
 
         private void LogOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            log_reg_page objMain = new log_reg_page();
+            this.Hide();
+            objMain.Show();
         }
     }
 }

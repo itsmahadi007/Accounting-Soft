@@ -8,7 +8,7 @@
 
     public partial class log_reg_page : Window
     {
-        internal SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Accounting_DB.mdf;Integrated Security=True;Connect Timeout=30");
+        internal SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\Accounting_DB.mdf;Integrated Security=True;Connect Timeout=30");
 
         public log_reg_page()
         {
@@ -218,8 +218,7 @@
                 cmd_num.Connection = sqlcon;
 
                 sqlcon.Open();
-                SqlDataReader num_db = cmd_num.ExecuteReader();
-                
+                SqlDataReader num_db = cmd_num.ExecuteReader();            
 
                 if (num_db.HasRows)
                 {

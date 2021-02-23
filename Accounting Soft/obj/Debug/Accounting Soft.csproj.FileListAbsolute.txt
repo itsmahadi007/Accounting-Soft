@@ -1,7 +1,6 @@
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.exe.config
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.exe
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.pdb
-C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csprojAssemblyReference.cache
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\log_reg_page.g.cs
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\MainWindow.g.cs
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\App.g.cs
@@ -15,9 +14,6 @@ C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accou
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csproj.CoreCompileInputs.cache
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.exe
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.pdb
-C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft_Content.g.cs
-C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB.mdf
-C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB_log.ldf
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.payments_form.resources
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.aboutUs_form.resources
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.account_form.resources
@@ -32,3 +28,8 @@ C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accou
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.tools_form.resources
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.mainform_form.resources
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.customVoucher_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.exe.manifest
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting Soft.application
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.TrustInfo.xml
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.exe.manifest
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.application
