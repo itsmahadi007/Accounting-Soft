@@ -152,6 +152,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Accounting_DB.mdf</DependentUpon>
     </Content>
+    <Resource Include="minimize_black.png" />
+    <Resource Include="max.png" />
+    <Resource Include="maximize2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
