@@ -33,3 +33,4 @@ C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accou
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.TrustInfo.xml
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.exe.manifest
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.application
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft.csprojAssemblyReference.cache
