@@ -18,3 +18,17 @@ C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accou
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting Soft_Content.g.cs
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB.mdf
 C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\bin\Debug\Accounting_DB_log.ldf
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.payments_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.aboutUs_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.account_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.bankAccounts_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.companyProfile_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.home_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.inventory_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.miscellaneous_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.pos_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.profile_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.setting_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.tools_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.mainform_form.resources
+C:\Users\itsma\Documents\VS 2019\Accounting-Soft\Accounting Soft\obj\Debug\Accounting_Soft.ChildForms.customVoucher_form.resources

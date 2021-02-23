@@ -157,7 +157,7 @@
             sda.Fill(dtbl);
             if (dtbl.Rows.Count == 1)
             {
-                MainWindow objMain = new MainWindow();
+                mainform_form objMain = new mainform_form();
                 this.Hide();
                 objMain.Show();
             }

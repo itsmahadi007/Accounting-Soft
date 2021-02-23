@@ -14,6 +14,9 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -26,7 +29,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -34,11 +36,13 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,9 +53,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Accounting_Soft.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -87,8 +98,92 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ChildForms\aboutUs_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\aboutUs_form.Designer.cs">
+      <DependentUpon>aboutUs_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\account_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\account_form.Designer.cs">
+      <DependentUpon>account_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\bankAccounts_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\bankAccounts_form.Designer.cs">
+      <DependentUpon>bankAccounts_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\companyProfile_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\companyProfile_form.Designer.cs">
+      <DependentUpon>companyProfile_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\customVoucher_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\customVoucher_form.Designer.cs">
+      <DependentUpon>customVoucher_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\home_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\home_form.Designer.cs">
+      <DependentUpon>home_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\inventory_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\inventory_form.Designer.cs">
+      <DependentUpon>inventory_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\miscellaneous_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\miscellaneous_form.Designer.cs">
+      <DependentUpon>miscellaneous_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\payments_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\payments_form.Designer.cs">
+      <DependentUpon>payments_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\pos_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\pos_form.Designer.cs">
+      <DependentUpon>pos_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\profile_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\profile_form.Designer.cs">
+      <DependentUpon>profile_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\setting_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\setting_form.Designer.cs">
+      <DependentUpon>setting_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\tools_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\tools_form.Designer.cs">
+      <DependentUpon>tools_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="log_reg_page.xaml.cs">
       <DependentUpon>log_reg_page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="mainform_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainform_form.Designer.cs">
+      <DependentUpon>mainform_form.cs</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -109,6 +204,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="ChildForms\aboutUs_form.resx">
+      <DependentUpon>aboutUs_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\account_form.resx">
+      <DependentUpon>account_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\bankAccounts_form.resx">
+      <DependentUpon>bankAccounts_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\companyProfile_form.resx">
+      <DependentUpon>companyProfile_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\customVoucher_form.resx">
+      <DependentUpon>customVoucher_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\home_form.resx">
+      <DependentUpon>home_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\inventory_form.resx">
+      <DependentUpon>inventory_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\miscellaneous_form.resx">
+      <DependentUpon>miscellaneous_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\payments_form.resx">
+      <DependentUpon>payments_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\pos_form.resx">
+      <DependentUpon>pos_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\profile_form.resx">
+      <DependentUpon>profile_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\setting_form.resx">
+      <DependentUpon>setting_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\tools_form.resx">
+      <DependentUpon>tools_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainform_form.resx">
+      <DependentUpon>mainform_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -168,5 +305,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
